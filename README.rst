@@ -49,7 +49,6 @@ Step-by-step installation instructions
     #. Check ``/usr/local/lib/`` and ``/usr/local/include/`` to see if fftw3 is installed.
 * Install ``NFFT``
     #. Clone the NFFT git repository:
-        
         git clone https://github.com/NFFT/nfft.git
         
 * Install ``pyNFFT``
