@@ -68,7 +68,7 @@ Step-by-step installation instructions
     
         pip install Cython
         
-    or::
+       or::
         
         conda install -c anaconda cython
         
