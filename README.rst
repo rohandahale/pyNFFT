@@ -69,7 +69,6 @@ Step-by-step installation instructions
     #. Check ``/usr/local/lib/`` and ``/usr/local/include/`` to see if ``nfft`` is installed.
     
 #. Install ``pyNFFT``
-
     #. Clone this repository::
         
         git clone 
