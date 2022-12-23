@@ -17,7 +17,7 @@ The documentation is hosted on `pythonhosted
 <https://github.com/ghisvail/pyNFFT>`_ and the Python package index page is
 `here <https://pypi.python.org/pypi/pyNFFT>`_.
 
-Installation for M1 Mac (MacOS > v12.0)
+Installation only for M1 Mac (MacOS > v12.0)
 --------------------------------------
 
 Step-by-step installation instructions
