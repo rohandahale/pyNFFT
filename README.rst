@@ -31,7 +31,7 @@ Installation for M1 Mac (MacOS > v12.0)
 
 Step-by-step installation instructions
 
-* Install ``fftw``
+#. Install ``fftw``
     #. You need ``gcc`` compiler for installing ``fftw`` with ``--enable-openmp``.  The ``gcc`` in M1 Mac (MacOS > v12.0) actually points to ``clang`` 
     
        Install ``gcc-12`` with brew::
@@ -46,12 +46,49 @@ Step-by-step installation instructions
             sudo make check
             sudo make install
             
-    #. Check ``/usr/local/lib/`` and ``/usr/local/include/`` to see if fftw3 is installed.
-* Install ``NFFT``
-    #. Clone the NFFT git repository:
-        git clone https://github.com/NFFT/nfft.git
+    #. Check ``/usr/local/lib/`` and ``/usr/local/include/`` to see if ``fftw3`` is installed.
+#. Install ``NFFT``
+    #. You need ``autoconf automake libtool`` for this step. Install it with::
+    
+        brew install autoconf automake libtool
         
-* Install ``pyNFFT``
+       Make sure you edit your ``.zshrc`` tp add it your ``PATH``
+       
+    #. Clone the NFFT git repository::
+    
+        git clone https://github.com/NFFT/nfft.git
+    
+    #. ``cd`` into the ``NFFT`` folder and using this configuration::
+        
+        ./bootstrap.sh
+        ./configure CC="gcc-12" --enable-all --enable-openmp --enable-shared --with-fftw3-libdir=/usr/local/lib/ --with-fftw3-includedir=/usr/local/include/
+        sudo make
+        sudo make check
+        sudo make install
+        
+    #. Check ``/usr/local/lib/`` and ``/usr/local/include/`` to see if ``nfft`` is installed.
+    
+#. Install ``pyNFFT``
+
+    #. Clone this repository::
+        
+        git clone 
+    
+    #. Install ``cython`` with ``pip`` to run this ``setup.py``::
+    
+        pip install cython
+        
+    #. ``cd`` into pyNFFT folder and build ``pynfft`` from ``setupy.py`` using::
+    
+        python setup.py build_ext -I /usr/local/include/ -L /usr/local/lib/ -R /usr/local/lib/
+        
+    #. While being inside the folder, install ``pynfft`` with::
+        
+        python -m pip install .
+        
+        or:
+        
+        pip install .
 
 Usage
 -----
