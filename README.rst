@@ -64,9 +64,13 @@ Step-by-step installation instructions
         
         git clone 
     
-    #. Install ``cython`` with ``pip`` to run this ``setup.py``::
+    #. Install ``cython`` with ``pip`` or ``conda`` to run this ``setup.py``::
     
-        pip install cython
+        pip install Cython
+        
+        or::
+        
+        conda install -c anaconda cython
         
     #. ``cd`` into pyNFFT folder and build ``pynfft`` from ``setupy.py`` using::
     
