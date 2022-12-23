@@ -32,7 +32,7 @@ Installation for M1 Mac (MacOS > v12.0)
 Step-by-step installation instructions
 
 * Install ``fftw``
-    #. You need ``gcc`` compiler for installing ``fftw`` with ``--enable-openmp``.  The ``gcc`` in M1 Mac (MacOS > v12.0) actually points to `clang`
+    #. You need ``gcc`` compiler for installing ``fftw`` with ``--enable-openmp``.  The ``gcc`` in M1 Mac (MacOS > v12.0) actually points to ``clang``
        Install ``gcc-12`` with brew::
        
             brew install gcc@12
