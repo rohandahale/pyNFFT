@@ -83,7 +83,6 @@ Step-by-step installation instructions
        or:
         
         pip install .
-        
     #. Done.
 
 Usage
