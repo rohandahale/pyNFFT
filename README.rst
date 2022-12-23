@@ -26,25 +26,27 @@ version 2.0. Please check the documentation for more information.
 The only officially supported platform for version 1.3 is Linux. Support for 
 more platforms is scheduled for the 2.x development tree.
 
-For M1 Mac (MacOS > v12.0)
----------------------------
+Installation for M1 Mac (MacOS > v12.0)
+--------------------------------------
 
 Step-by-step installation instructions:
 
-#. Install `fftw`
-        #. You need `gcc` compiler for installing `fftw` with `--enable-openmp`. 
-        The `gcc` in M1 Mac (MacOS > v12.0) actually points to `clang`.
-        Install `gcc-12` with brew::
+#. Install ``fftw``
+        #. You need ``gcc`` compiler for installing ``fftw`` with ``--enable-openmp``. 
+        The ``gcc`` in M1 Mac (MacOS > v12.0) actually points to `clang`.
+        Install ``gcc-12`` with brew::
                 brew install gcc@12
         #. Download FFTW 3.3.10 from `fftw.org <http://www.fftw.org/download.html>`_ and extract the folder.
-        #. `cd` into the ``fftw` folder and using this configuration::
+        #. ``cd`` into the ``fftw`` folder and using this configuration::
+        
                 ./configure CC="gcc-12" --enable-shared --enable-threads --enable-openmp
                 sudo make
                 sudo make check
                 sudo make install
-        #. Check `/usr/local/lib/` and `/usr/local/include/` to see if fftw3 is installed.
-#. Install `NFFT`
-#. Install pyNFFT
+                
+        #. Check ``/usr/local/lib/`` and ``/usr/local/include/`` to see if fftw3 is installed.
+#. Install ``NFFT``
+#. Install ``pyNFFT``
 
 Usage
 -----
@@ -52,8 +54,8 @@ Usage
 See the `tutorial <http://pythonhosted.org/pyNFFT/tutorial.html>`_ 
 section of the documentation.
 
-Installation
-------------
+Installation (Linux)
+-------------------
 
 Support for pip/easy_install has been added via the `Python Package Index
 <http://pypi.python.org/pypi/>`_. The pyNFFT package can be installed with::
