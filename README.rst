@@ -29,7 +29,7 @@ more platforms is scheduled for the 2.x development tree.
 Installation for M1 Mac (MacOS > v12.0)
 --------------------------------------
 
-Step-by-step installation instructions:
+Step-by-step installation instructions.
 
 * Install ``fftw``.
         #. You need ``gcc`` compiler for installing ``fftw`` with ``--enable-openmp``. 
