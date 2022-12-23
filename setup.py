@@ -26,6 +26,7 @@ setup_dir = dir = os.path.dirname(os.path.abspath(__file__))
 package_name = 'pynfft'
 package_dir = os.path.join(setup_dir, package_name)
 
+os.environ["CC"]="gcc-12"
 
 # Define utility functions to build the extensions
 def get_common_extension_args():
@@ -34,7 +35,7 @@ def get_common_extension_args():
         libraries=['nfft3_threads', 'nfft3', 'fftw3_threads', 'fftw3', 'm'],
         library_dirs=[],
         include_dirs=[numpy.get_include()],
-        extra_compile_args='-O3 -fomit-frame-pointer -malign-double '
+        extra_compile_args='-O3 -fomit-frame-pointer '
         '-fstrict-aliasing -ffast-math'.split(),
         )
     return common_extension_args
