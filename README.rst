@@ -80,9 +80,11 @@ Step-by-step installation instructions
         
         python -m pip install .
         
-        or:
+       or:
         
         pip install .
+        
+    #. Done.
 
 Usage
 -----
