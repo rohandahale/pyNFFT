@@ -62,7 +62,7 @@ Step-by-step installation instructions
 #. Install ``pyNFFT``
     #. Clone this repository::
         
-        git clone 
+        git clone https://github.com/rohandahale/pyNFFT.git
     
     #. Install ``cython`` with ``pip`` or ``conda`` to run this ``setup.py``::
     
