@@ -1,5 +1,5 @@
-PyNFFT - Pythonic bindings around the NFFT library
-==================================================
+PyNFFT - Pythonic bindings around the NFFT library (M1 Mac)
+==========================================================
 
 "The NFFT is a C subroutine library for computing the nonequispaced discrete
 Fourier transform (NDFT) in one or more dimensions, of arbitrary input size,
