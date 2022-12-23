@@ -31,7 +31,7 @@ Installation for M1 Mac (MacOS > v12.0)
 
 Step-by-step installation instructions:
 
-#. Install ``fftw``
+* Install ``fftw``.
         #. You need ``gcc`` compiler for installing ``fftw`` with ``--enable-openmp``. 
         The ``gcc`` in M1 Mac (MacOS > v12.0) actually points to `clang`.
         Install ``gcc-12`` with brew::
@@ -45,8 +45,8 @@ Step-by-step installation instructions:
                 sudo make install
                 
         #. Check ``/usr/local/lib/`` and ``/usr/local/include/`` to see if fftw3 is installed.
-#. Install ``NFFT``
-#. Install ``pyNFFT``
+* Install ``NFFT``
+* Install ``pyNFFT``
 
 Usage
 -----
