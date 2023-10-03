@@ -66,11 +66,11 @@ Step-by-step installation instructions
     
     #. Install ``cython`` with ``pip`` or ``conda`` to run this ``setup.py``::
     
-        pip install Cython
+        pip install Cython==0.29.32
         
        or::
         
-        conda install -c anaconda cython
+        conda install -c anaconda cython==0.29.32
         
     #. ``cd`` into pyNFFT folder and build ``pynfft`` from ``setupy.py`` using::
     
@@ -95,10 +95,10 @@ section of the documentation.
 Requirements
 ------------
 
-- Python 2.7 or greater
-- Numpy 1.6 or greater
+- Python 2.7 or greater (recommended 3.8.16)
+- Numpy 1.6 or greater (recommended 1.21.1)
 - NFFT library 3.2 or greater, compiled with openMP support
-- Cython 0.12 or greater
+- Cython 0.12 or greater (recommended 0.29.32)
 
 Contributing
 ------------
