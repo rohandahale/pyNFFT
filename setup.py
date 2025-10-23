@@ -31,13 +31,18 @@ os.environ["CC"]="gcc-12"
 # Define utility functions to build the extensions
 def get_common_extension_args():
     import numpy
+    import sys
     common_extension_args = dict(
         libraries=['nfft3_threads', 'nfft3', 'fftw3_threads', 'fftw3', 'm'],
-        library_dirs=[],
-        include_dirs=[numpy.get_include()],
+        library_dirs=['/usr/local/lib'],
+        include_dirs=[numpy.get_include(), '/usr/local/include'],
         extra_compile_args='-O3 -fomit-frame-pointer '
         '-fstrict-aliasing -ffast-math'.split(),
         )
+    # Fix for macOS 16.0 libraries
+    if sys.platform == 'darwin':
+        common_extension_args['extra_compile_args'].append('-mmacosx-version-min=16.0')
+        common_extension_args['extra_link_args'] = ['-mmacosx-version-min=16.0']
     return common_extension_args
 
 def get_extensions():
