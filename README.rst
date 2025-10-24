@@ -74,7 +74,8 @@ Step-by-step installation instructions
     #. ``cd`` into pyNFFT folder, build and install ``pynfft``::
     
         export MACOSX_DEPLOYMENT_TARGET=16.0
-        pip install -e . --no-build-isolation
+        python setup.py build_ext -I /usr/local/include/ -L /usr/local/lib/ -R /usr/local/lib/
+        pip install . --no-build-isolation
     
     #. **Important:** Fix the duplicate RPATH issue that may occur with conda/micromamba environments.
     
